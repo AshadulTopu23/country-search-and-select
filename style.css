@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #74B9FF;
+}
+
+.container {
+  margin: 2em auto;
+  width: 500px;
+}
+
+input {
+  display: block;
+  font-size: 1.5rem;
+  background-color: #192A56;
+  color: white;
+  border: none;
+  padding: .5em;
+  width: 500px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, .7);
+}
+
+.filters-letter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+button {
+  padding: .5em 1em;
+  background-color: #67E6DC;
+  border: none;
+  text-transform: uppercase;
+  opacity: .7;
+  transition: all .2s ease-in;
+  position: relative;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #3C40C6;
+  transform: scale(1.25);
+  z-index: 2;
+}
+
+button.filters__basic:hover {
+  z-index: 10;
+}
+
+button.active {
+  background-color: #3C40C6;
+}
+
+ul.country-list {
+  list-style-type: none;
+  padding: 0;
+  width: 500px;
+}
+
+ul.country-list li {
+  /* font-size: 1.5rem; */
+  padding: .5em;
+  background-color:#0A3D62;
+  opacity: .9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 24px; */
+}
+ul.country-list li div{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* ul.country-list li span{
+    display: block;
+    text-align: left;
+    flex-grow: 1;
+} */
+ul.country-list li input{
+    width: initial;
+    height: initial;
+}
+ul.country-list li:hover {
+  transform: scale(1.025);
+  opacity: 1;
+  flex-grow: 1;
+}
+
+.hide {
+  display: none !important;
+}
+
+ul.country-list li {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
